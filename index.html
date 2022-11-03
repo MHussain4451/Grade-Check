@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Grade Check</h1>
+    <hr>
+    <form onsubmit="conditionCheck(); return false">
+        <labelfor="grd">Grade:</label>
+        <input type="number" id="grd">
+        <input type="submit" value="check">
+    </form>
+    <p id="result"></p>
+    <script>
+        function conditionCheck(){
+            let grd= +document.querySelector("#grd").value;
+            if(grd >=80){
+                document.querySelector("#result"),innerHTML=`Excelent you have A1 grade`;
+
+            }else if(grd >=70){
+                document.querySelector("#result"),innerHTML=`Excelent you have A grade`;
+            }else if(grd >=60){
+                document.querySelector("#result"),innerHTML=`Excelent you have B grade`;
+            }else if(grd >=50){
+                document.querySelector("#result"),innerHTML=`you have C grade`;
+            }else if(grd >=1){
+                document.querySelector("#result"),innerHTML=`you are fail`;
+            }else if(grd >=101){
+                document.querySelector("#result"),innerHTML=`Invalid input`;
+            }else (grd <=0){
+                document.querySelector("#result"),innerHTML=`Invalid below zero`;
+            }
+            
+        }
+    </script>
+</body>
+</html>
