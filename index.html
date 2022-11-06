@@ -19,20 +19,20 @@
         function conditionCheck(){
             let grd= +document.querySelector("#grd").value;
             if(grd >=80){
-                document.querySelector("#result"),innerHTML=`Excelent you have A1 grade`;
+                document.querySelector("#result").innerHTML=`Excelent you have A1 grade`;
 
             }else if(grd >=70){
-                document.querySelector("#result"),innerHTML=`Excelent you have A grade`;
+                document.querySelector("#result").innerHTML=`Excelent you have A grade`;
             }else if(grd >=60){
-                document.querySelector("#result"),innerHTML=`Excelent you have B grade`;
+                document.querySelector("#result").innerHTML=`Excelent you have B grade`;
             }else if(grd >=50){
-                document.querySelector("#result"),innerHTML=`you have C grade`;
+                document.querySelector("#result").innerHTML=`you have C grade`;
             }else if(grd >=1){
-                document.querySelector("#result"),innerHTML=`you are fail`;
+                document.querySelector("#result").innerHTML=`you are fail`;
             }else if(grd >=101){
-                document.querySelector("#result"),innerHTML=`Invalid input`;
-            }else (grd <=0){
-                document.querySelector("#result"),innerHTML=`Invalid below zero`;
+                document.querySelector("#result").innerHTML=`Invalid input`;
+            }else{ 
+                document.querySelector("#result").innerHTML=`Invalid below zero`;
             }
             
         }
